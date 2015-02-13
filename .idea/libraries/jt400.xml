@@ -2,6 +2,7 @@
   <library name="jt400">
     <CLASSES>
       <root url="jar://D:/OneDrive/Java/Driver/jtopen_8_4/lib/jt400.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Java/Driver/jtopen_8_4/lib/jt400.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

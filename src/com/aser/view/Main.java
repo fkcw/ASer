@@ -15,11 +15,12 @@ import java.util.Vector;
  * Created by PeterZhang on 2015/2/12.
  */
 public class Main {
-    static DBQDao dbqDao = new DBQDao();
-    static DBUtil dbUtil = new DBUtil();
+     DBQDao dbqDao = new DBQDao();
+     DBUtil dbUtil = new DBUtil();
 
     public static void main(String[] args) {
-
+        DBQDao dbqDao = new DBQDao();
+        DBUtil dbUtil = new DBUtil();
         Connection con = null;
         try {
             con = dbUtil.getCon();
@@ -29,8 +30,11 @@ public class Main {
             for (int i=1; i <=rsmd.getColumnCount();i++){
                 nameOfcolumns.addElement(rsmd.getColumnName(i));
             }
-            while (rs.next()){
-
+            while (rs.next()) {
+                for (int i = 1; i <= nameOfcolumns.size(); i++) {
+                    System.out.print(rs.getString(i) + "-");
+                }
+                System.out.println("");
             }
         } catch (SQLException e) {
             e.printStackTrace();
