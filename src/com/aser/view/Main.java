@@ -2,9 +2,6 @@ package com.aser.view;
 
 import com.aser.dao.DBQDao;
 import com.aser.util.DBUtil;
-import com.sun.corba.se.impl.orbutil.CorbaResourceUtil;
-
-import javax.sound.midi.Soundbank;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
@@ -15,8 +12,6 @@ import java.util.Vector;
  * Created by PeterZhang on 2015/2/12.
  */
 public class Main {
-     DBQDao dbqDao = new DBQDao();
-     DBUtil dbUtil = new DBUtil();
 
     public static void main(String[] args) {
         DBQDao dbqDao = new DBQDao();
@@ -46,6 +41,8 @@ public class Main {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+
         }
+
     }
 }
